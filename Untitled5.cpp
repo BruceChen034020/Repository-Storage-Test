@@ -6,7 +6,7 @@
 int main(){
     srand(time(NULL));
     int i;
-    for(i=1; i<70; i++){
+    for(i=4; i<70; i++){
         char fileName[20];
         sprintf(fileName, "b%d.txt", i);
         printf("fsutil file createnew %s %d\n", fileName, 100000000+i);
@@ -16,7 +16,6 @@ int main(){
             char r = rand(); // 亂碼之神大顯神功~
             fprintf(A, "%c", r);
         }
-        system("pause");
         fclose(A);
     }
 }
